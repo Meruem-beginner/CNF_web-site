@@ -1,7 +1,7 @@
 const characters = [
   {
-    name: "KAI",
-    img: "images/kai.jpg",
+    name: "禍津日神",
+    img: "images/handsome-icon_5-8-8-40.webp",
     feature: "冷静沈着なギタリスト。闇を切り裂く旋律を奏でる。"
   },
   {
@@ -40,3 +40,4 @@ document.getElementById("next").addEventListener("click", () => {
 
 // 初期表示
 showCharacter(currentIndex);
+
