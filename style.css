@@ -8,23 +8,34 @@ body {
 
 header {
   background: linear-gradient(to right, #000, #222);
-  padding: 20px;
-  text-align: center;
+  padding: 10px 20px;
   border-bottom: 2px solid #444;
+
+  /* ロゴ・タイトル・ナビを横並びにする */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 50px;   /* ロゴの高さを調整 */
+  width: auto;    /* アスペクト比を維持 */
 }
 
 header h1 {
   font-family: 'Impact', sans-serif;
   color: #c00;
   text-shadow: 2px 2px 5px #000;
+  margin: 0 20px; /* ロゴとの間に余白 */
 }
 
 nav a {
   color: #eee;
-  margin: 0 15px;
+  margin: 0 10px;
   text-decoration: none;
   font-weight: bold;
 }
+
 
 nav a:hover {
   color: #c00;
@@ -140,4 +151,30 @@ footer {
     width: 100%;
     max-width: 200px;
   }
+}
+
+/* 背景文字 */
+.background-text {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  width: 200vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+  opacity: 0.05;
+  pointer-events: none;
+}
+
+.background-text span {
+  font-size: 7.75vw;
+  font-weight: bold;
+  color: #c00;
+  margin: 0.01% 0.75vw;  /* ← ここれが文字ブロック同士の余白る */
+  white-space: nowrap;
+  letter-spacing: -0.3vw;    /* ← 文字間隔。ここを調整すると詰まる */
 }

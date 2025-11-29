@@ -2,17 +2,17 @@ const characters = [
   {
     name: "禍津日神",
     img: "images/handsome-icon_5-8-8-40.webp",
-    feature: "冷静沈着なギタリスト。闇を切り裂く旋律を奏でる。"
+    feature: "冷静沈着なパーカッション。闇を切り裂く旋律を奏でる。"
   },
   {
-    name: "REI",
-    img: "images/rei.jpg",
-    feature: "激情的なボーカリスト。魂を震わせる歌声を持つ。"
-  },
-  {
-    name: "YUU",
-    img: "images/yuu.jpg",
+    name: "大獄丸",
+    img: "images/showcase-558491ad9890d2f7f12124d4500242a3-20230907232747.jpeg",
     feature: "神秘的なドラマー。リズムで世界を支配する。"
+  },
+  {
+    name: "虎熊童子",
+    img: "images/showcase-6983cfe3fc3cf613dba4190a77d6fe4c-20230530102048.jpeg",
+    feature: "激情的なボーカリスト。魂を震わせる歌声を持つ。"
   }
 ];
 
@@ -40,4 +40,3 @@ document.getElementById("next").addEventListener("click", () => {
 
 // 初期表示
 showCharacter(currentIndex);
-
