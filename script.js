@@ -13,6 +13,11 @@ const characters = [
     name: "虎熊童子",
     img: "images/showcase-6983cfe3fc3cf613dba4190a77d6fe4c-20230530102048.jpeg",
     feature: "激情的なボーカリスト。魂を震わせる歌声を持つ。"
+  },
+  {
+    name: "餓鬼",
+    img: "images/handsome-icon_5-8-8-38.webp",
+    feature: "!"
   }
 ];
 
@@ -40,3 +45,4 @@ document.getElementById("next").addEventListener("click", () => {
 
 // 初期表示
 showCharacter(currentIndex);
+
